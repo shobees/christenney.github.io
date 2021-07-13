@@ -1,0 +1,283 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* HEADER STYLES START HERE */
+.header,
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.headerIcons-wraper {
+  text-align: right;
+}
+a {
+  color: #fff !important;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}
+.icon {
+  margin: 5px;
+  padding: 0px;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center !important;
+  display: inline-block;
+  font-size: 12px;
+}
+.contacts-wraper {
+  display: flex;
+}
+.cellNo {
+  display: table;
+  float: none;
+}
+.cellNo i {
+  margin-left: 10px;
+  margin-right: 4px;
+  padding: 0px 0px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.cellNo p {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto !important;
+  font-size: 14px;
+  font-weight: inherit;
+  text-align: center;
+}
+.facebook:hover {
+  color: #4267b2;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.youtube:hover {
+  color: #ff0000;
+}
+.linkedin:hover {
+  color: #0e76a8;
+}
+.instagram:hover {
+  color: #db4e7b;
+}
+@media (max-width: 768px) {
+  .contacts-wraper {
+    justify-content: center;
+  }
+  .headerIcons-wraper {
+    text-align: center;
+  }
+}
+/* HEADER STYLES CLOSE HERE */
+/* HOME STYLES START HERE */
+#home {
+  background-image: url(./images/img-1.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  padding: 50px;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 77%,
+    50% 100%,
+    0 77%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
+}
+#home .overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+}
+.name {
+  width: 100%;
+  font-size: 6rem;
+  font-family: "Raleway";
+  font-weight: 800;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: right;
+  font-size: 30px;
+  color: #7d0e01;
+  letter-spacing: 5px;
+}
+.slogen {
+  font-size: 50px;
+  color: #fff;
+}
+#home .navsItem {
+  font-size: 20px;
+  font-weight: 600;
+}
+.name-wraper {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  #home .navsItem {
+    font-size: 13px;
+    text-align: center;
+  }
+  .name {
+    font-size: 5rem;
+  }
+  audio {
+    width: 100%;
+  }
+}
+@media (max-width: 592px) {
+  .name {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  #home .navsItem {
+    font-size: 11px;
+  }
+  audio {
+    width: 100%;
+  }
+}
+/* HOME STYLES CLOSE HERE */
+/* NAVS STYLES START HERE */
+.navsList {
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  top: 85px;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+.navsItem {
+  margin-right: 5%;
+  display: inline-block;
+}
+/* NAVS STYLES CLOSE HERE */
+
+/* CONTACT-US STYLES START HERE */
+#contact-us {
+  /* background-color: #035272; */
+  background-image: url(./images/img-2.jpg);
+  /* background-size: cover; */
+  color: #fff;
+}
+#contact-us .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.heading {
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 40px;
+}
+.form {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 150px;
+  padding: 10px;
+}
+#button {
+  margin-top: 25px;
+  background-color: #d34f3d;
+  padding: 10px 35px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+/* CONTACT-US STYLES CLOSE HERE */
+/* ABOUT US AND DEMOS STYLES START HERE */
+.about-demos {
+  padding: 50px 0px;
+}
+#about p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+}
+#about h2 {
+  font-weight: 900;
+  font-size: 22px;
+  padding: 30px 0px;
+}
+#demos h2 {
+  font-weight: 900;
+  font-size: 22px;
+  padding: 30px 0px;
+}
+audio {
+  width: 80%;
+  outline: none;
+}
+/* ABOUT US AND DEMOS STYLES CLOSE HERE */
+
+/* FOOTER STYLES START HERE */
+.footer-wraper {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+}
+.footer-navs {
+  text-align: right;
+}
+.rights {
+  font-size: 12px;
+}
+.footer .navsItem {
+  margin-left: 5%;
+  margin-right: 0px;
+}
+/* FOOTER STYLES CLOSE HERE */
